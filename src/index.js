@@ -57,7 +57,7 @@ function run(filter) {
   })
 }
 
-if (process.argv.length === 2 || process.argv[2] === 'watch') {
+if (process.argv.length === 2) {
   run()
 } else if (process.argv[2] === 'hint') {
   const exercise = EXERCISES.find(ex => ex.name.includes(process.argv[3]))
