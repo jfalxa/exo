@@ -2,9 +2,9 @@ module.exports = [
   {
     name: 'variables1',
     path: 'exercises/variables/variables1.js',
-    hint: 'The declaration on line 9 is missing a keyword in order to create a new variable.' // prettier-ignore
+    hint:
+      'The declaration on line 9 is missing a keyword in order to create a new variable.'
   },
-
   {
     name: 'variables2',
     path: 'exercises/variables/variables2.js',
