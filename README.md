@@ -3,11 +3,12 @@
 Set of javascript exercises inspired by https://github.com/rust-lang/rustlings.
 
 You need to have `node` and `npm` installed.
-Clone this repository and run `npm install` inside to install the needed dependencies, then:
+Clone this repository and run `npm install` inside to get the needed dependencies.
+Then, open the cloned repo in your favorite text editor and finally run one of the following commands:
 
 ## Watch mode
 
-Run `npm start` to start watching for changes in your exercises and jump to the next available task when you're done with your current exercise.
+Run `npm start` to start watching for changes in your exercises. Edit them in your text editor and once you feel you're done with one of them, remove the `// I AM NOT DONE` line from it to move onto the next task.
 
 ## Filtered mode
 
