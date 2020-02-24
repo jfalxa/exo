@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      import assert from 'assert'
+
+      window.assert = assert
+
+      import('../exercises/variables/variables1.js').then(mod => {
+        if (typeof mod.default === 'function') {
+          mod.default()
+        }
+      })
+    </script>
+  </body>
+</html>
