@@ -25,5 +25,30 @@ On the other hand, 'let' variable do not require being initialized.`
     - through if...else
     - using the ternary operator 'condition ? valueA : valueB'`
   },
+
+  {
+    name: 'functions1',
+    path: 'exercises/functions/functions1.js',
+    hint: 'Read a bit of the MDN reference in the readme.'
+  },
+  {
+    name: 'functions2',
+    path: 'exercises/functions/functions2.js',
+    hint: 'When declaring a function you can specify different parameters.'
+  },
+  {
+    name: 'functions3',
+    path: 'exercises/functions/functions3.js',
+    hint: 'Functions can return an ouput'
+  },
+  {
+    name: 'functions4',
+    path: 'exercises/functions/functions4.js',
+    hint: 'Functions can be passed as parameters of other functions.'
+  },
+  {
+    name: 'functions5',
+    path: 'exercises/functions/functions5.js',
+    hint: 'Arrow functions are a shorter way to declare functions.'
   }
 ]
