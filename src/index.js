@@ -61,7 +61,7 @@ if (process.argv.length === 2 || process.argv[2] === 'watch') {
   run()
 } else if (process.argv[2] === 'hint') {
   const exercise = EXERCISES.find(ex => ex.name.includes(process.argv[3]))
-  console.log(exercise.hint || 'No hint for this exercise')
+  console.log((exercise && exercise.hint) || 'No hint for this exercise')
 } else if (process.argv.length === 3) {
   run(process.argv[2])
 }
