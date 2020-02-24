@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "eslint": "^6.8.0",
-    "glob": "^7.1.6",
-    "parcel": "^2.0.0-nightly.119"
+    "glob": "^7.1.6"
   },
   "devDependencies": {
+    "parcel": "^2.0.0-nightly.119",
     "@parcel/validator-eslint": "^2.0.0-alpha.3"
   }
 }

@@ -3,6 +3,7 @@
 Set of javascript exercises inspired by https://github.com/rust-lang/rustlings.
 
 You need to have `node` and `npm` installed.
+Clone this repository and run `npm install` inside to install the needed dependencies, then:
 
 ## Watch mode
 
