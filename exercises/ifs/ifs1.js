@@ -4,5 +4,8 @@ function bigger(a, b) {
   // return the bigger number between a and b
 }
 
-assert(bigger(10, 0), 10)
-assert(bigger(-100, 100), 100)
+// the assert function is provided by this repo, you can ignore it
+// its role is only to throw an error if what you pass it is false
+// it's a fast way of checking for mistakes
+assert(bigger(10, 0) === 10)
+assert(bigger(-100, 100) === 100)
