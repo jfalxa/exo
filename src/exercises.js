@@ -129,12 +129,35 @@ This might also be a good occasion to use a while loop in combination with:
     name: 'objects2',
     path: 'exercises/objects/objects2',
     hint: `The easiest way to loop through an object's keys it to use the "for (const key in object)" loop.
-Another way it to use the Object.keys(object) or Object.entries(object) global functions: they return an array containing what you asked and allow you to use the functional iteration studied in the previous set of exercises`
+Another way it to use the "Object.keys(object)" or "Object.entries(object)" global functions: they return an array containing what you asked and allow you to use the functional iteration studied in the previous set of exercises`
   },
 
   {
     name: 'destructuring1',
     path: 'exercises/destructuring/destructuring1.js',
     hint: 'README.md'
+  },
+
+  {
+    name: 'dom1',
+    path: 'exercises/dom/dom1.js',
+    hint:
+      'Use "document.getElementById(id)" or "document.querySelector(selector)"'
+  },
+  {
+    name: 'dom2',
+    path: 'exercises/dom/dom2.js',
+    hint:
+      'Use "const childElement = document.createElement(tagName)" + "parentElement.append(childElement)", or directly edit parentElement.innerHTML (more dangerous)'
+  },
+  {
+    name: 'dom3',
+    path: 'exercises/dom/dom3.js',
+    hint: `Detecting clicks is done through event listeners, there are 2 ways of registering them:
+    - using "element.addEventListener("click", callback)"
+    - filling "element.onclick = callback" but this allows only one click listener at a time
+    
+In both cases, "callback" should be a function that will be called every time the event is triggered
+    `
   }
 ]
