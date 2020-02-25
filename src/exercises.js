@@ -69,5 +69,25 @@ On the other hand, 'let' variable do not require being initialized.`
     hint: `You can loop from the end to the beginning by doing: for (let i=str.length - 1; i >= 0; i--)
 If you want to interrupt the loop when you found the vowel, you can use the keyword "break" that will jump out of the loop statement and run what's after.
 Or you can directly call "return ..." inside the loop in order to end your function's execution.`
+  },
+
+  {
+    name: 'strings1',
+    path: 'exercises/strings/strings1',
+    hint: `Strings can be combined using the "+" operator.
+Example: "a" + "b" === "ab"`
+  },
+  {
+    name: 'strings2',
+    path: 'exercises/strings/strings2',
+    hint: 'Template strings allow you to execute any JS expression inside ${}'
+  },
+  {
+    name: 'strings3',
+    path: 'exercises/strings/strings3',
+    hint: `The are many ways to extract parts of a string:
+    - access the n-th character of a string by doing "string[n]"
+    - separate a string in multiple pieces using "string.split(separator)"
+    - replace part of the string with something else using "string.replace(stringToReplace, stringReplacement)"`
   }
 ]
