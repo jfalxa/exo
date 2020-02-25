@@ -3,12 +3,12 @@ const Parcel = require('@parcel/core').default
 const EXERCISES = require('./exercises')
 
 // find first exercise that's not done
-function next() {
-  for (let i = 0; i < EXERCISES.length; i++) {
-    const file = FS.readFileSync(EXERCISES[i].path, 'utf8')
+function next(exercises) {
+  for (let i = 0; i < exercises.length; i++) {
+    const file = FS.readFileSync(exercises[i].path, 'utf8')
 
     if (file.includes('// I AM NOT DONE')) {
-      return EXERCISES[i]
+      return exercises[i]
     }
   }
 }
@@ -18,12 +18,11 @@ function select(exercise) {
   FS.readFile('src/index.html', 'utf8', (err, html) => {
     if (err) throw err
 
-    const withExercise = html.replace(
-      /import\(.*\)/,
-      `import('../${exercise.path}')`
-    )
+    const nextHTML = html
+      .replace(/<title>.*<\/title>/, `<title>${exercise.name}</title>`)
+      .replace(/import\(.*\)/, `import('../${exercise.path}')`)
 
-    FS.writeFile('src/index.html', withExercise, err => {
+    FS.writeFile('src/index.html', nextHTML, err => {
       if (err) throw err
     })
   })
@@ -43,14 +42,18 @@ function run(filter) {
   })
 
   let target = next(exercises)
-  select(target)
+  target && select(target)
+
+  if (!target) {
+    return console.log('Congratulations, all exercises were completed')
+  }
 
   parcel.watch(() => {
     if (!target) return
 
     const file = FS.readFileSync(target.path, 'utf8')
 
-    if (!filter && !file.includes('// I AM NOT DONE')) {
+    if (!file.includes('// I AM NOT DONE')) {
       target = next(exercises)
       target && select(target)
     }
@@ -60,7 +63,7 @@ function run(filter) {
 if (process.argv.length === 2) {
   run()
 } else if (process.argv[2] === 'hint') {
-  const exercise = EXERCISES.find(ex => ex.name.includes(process.argv[3]))
+  const exercise = EXERCISES.find(ex => ex.name === process.argv[3])
   console.log((exercise && exercise.hint) || 'No hint for this exercise')
 } else if (process.argv.length === 3) {
   run(process.argv[2])

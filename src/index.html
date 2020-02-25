@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercises</title>
+    <title>ifs1</title>
   </head>
   <body>
     <div id="root"></div>
     <script>
       import assert from 'assert'
+      import exercises from './exercises'
+
+      const title = document.head.querySelector('title').innerText
+      const exercise = exercises.find(ex => ex.name === title)
 
       window.assert = assert
+      window.hint = exercise && exercise.hint
 
-      import('../exercises/variables/variables1.js').then(mod => {
-        if (typeof mod.default === 'function') {
-          mod.default()
-        }
-      })
+      import('../exercises/ifs/ifs1.js')
+        .then(mod => {
+          if (typeof mod.default === 'function') {
+            mod.default()
+          }
+
+          console.log(
+            'Good job, you can now go to the next exercise (or keep playing with this one).'
+          )
+        })
+        .catch(err =>
+          console.error(
+            `An error happened while trying to run the exercise's code`,
+            '\n',
+            err
+          )
+        )
     </script>
   </body>
 </html>

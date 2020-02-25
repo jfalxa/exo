@@ -2,7 +2,7 @@
 
 export default function main() {
   const x = 3
-  console.log('Number {}', x)
+  console.log('Number %d', x)
   x = 5
-  console.log('Number {}', x)
+  console.log('Number %d', x)
 }

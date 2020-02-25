@@ -29,7 +29,7 @@ On the other hand, 'let' variable do not require being initialized.`
   {
     name: 'functions1',
     path: 'exercises/functions/functions1.js',
-    hint: 'Read a bit of the MDN reference in the readme.'
+    hint: 'The callMe function does not exist, make sure it does.'
   },
   {
     name: 'functions2',
@@ -39,7 +39,7 @@ On the other hand, 'let' variable do not require being initialized.`
   {
     name: 'functions3',
     path: 'exercises/functions/functions3.js',
-    hint: 'Functions can return an ouput'
+    hint: 'Functions can optionally return an ouput'
   },
   {
     name: 'functions4',

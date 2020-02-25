@@ -7,5 +7,5 @@ function callMe() {
 }
 
 export default function main() {
-  callMe(3)
+  callMe(3) // you should see 3 lines in the console if it works
 }
