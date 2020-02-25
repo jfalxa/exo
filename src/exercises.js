@@ -89,5 +89,33 @@ Example: "a" + "b" === "ab"`
     - access the n-th character of a string by doing "string[n]"
     - separate a string in multiple pieces using "string.split(separator)"
     - replace part of the string with something else using "string.replace(stringToReplace, stringReplacement)"`
+  },
+
+  {
+    name: 'arrays1',
+    path: 'exercises/arrays/arrays1',
+    hint: `You can either:
+    - initialize the array with 1,2,3 
+    - use "array.push(element)" to add them manually after initalization
+    - initialize the array using "const array = Array(length)" and then doing "array[n] = n"`
+  },
+  {
+    name: 'arrays2',
+    path: 'exercises/arrays/arrays2',
+    hint: `Inside a for loop, you can use an array's length to iterate through every item of this array.
+    
+This might also be a good occasion to use a while loop in combination with:
+    - "array.shift()" which removes the first element of the array and returns it
+    - "array.pop()" which removes the last element of the array and returns it + "array.reverse()"`
+  },
+  {
+    name: 'arrays3',
+    path: 'exercises/arrays/arrays3',
+    hint: `Inside a for loop, you can use an array's length to iterate through every item of this array`
+  },
+  {
+    name: 'arrays4',
+    path: 'exercises/arrays/arrays4',
+    hint: 'Follow the white rabbit'
   }
 ]
