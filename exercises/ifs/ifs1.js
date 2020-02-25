@@ -8,6 +8,6 @@ function bigger(a, b) {
 // its role is only to throw an error if what you pass it is false
 // it's a fast way of checking for mistakes
 // if it throws, you'll see an AssertionError in your dev tools
-// make sure no error happens but NEVER CHANGE the assert lines (in any exercise)
+// make sure no error happens but WITHOUT EVER CHANGING the assert lines (in any exercise)
 assert(bigger(10, 0) === 10, '10 should be bigger than 0')
 assert(bigger(-100, 100) === 100, '100 should be bigger than -100')

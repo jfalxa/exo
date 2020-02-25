@@ -50,5 +50,24 @@ On the other hand, 'let' variable do not require being initialized.`
     name: 'functions5',
     path: 'exercises/functions/functions5.js',
     hint: 'Arrow functions are a shorter way to declare functions.'
+  },
+
+  {
+    name: 'loops1',
+    path: 'exercises/loops/loops1.js',
+    hint: 'Use a for loop to add numbers to each other'
+  },
+  {
+    name: 'loops2',
+    path: 'exercises/loops/loops2.js',
+    hint:
+      'Add a condition on i to the while statement and update i on every iteration'
+  },
+  {
+    name: 'loops3',
+    path: 'exercises/loops/loops3.js',
+    hint: `You can loop from the end to the beginning by doing: for (let i=str.length - 1; i >= 0; i--)
+If you want to interrupt the loop when you found the vowel, you can use the keyword "break" that will jump out of the loop statement and run what's after.
+Or you can directly call "return ..." inside the loop in order to end your function's execution.`
   }
 ]
