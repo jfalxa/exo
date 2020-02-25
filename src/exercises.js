@@ -117,5 +117,18 @@ This might also be a good occasion to use a while loop in combination with:
     name: 'arrays4',
     path: 'exercises/arrays/arrays4',
     hint: 'Follow the white rabbit'
+  },
+
+  {
+    name: 'objects1',
+    path: 'exercises/objects/objects1',
+    hint:
+      'You can directly initialize the object on declaration or manually add the wanted key/value pairs after'
+  },
+  {
+    name: 'objects2',
+    path: 'exercises/objects/objects2',
+    hint: `The easiest way to loop through an object's keys it to use the "for (const key in object)" loop.
+Another way it to use the Object.keys(object) or Object.entries(object) global functions: they return an array containing what you asked and allow you to use the functional iteration studied in the previous set of exercises`
   }
 ]
