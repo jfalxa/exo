@@ -15,9 +15,9 @@ For each exercise, you are given one JS script that contains errors (either at c
 - Open the cloned repo in your favorite text editor
 - Start fixing the files inside the `exercises` directory !
 
-N.B: If your code compiles without errors, **it does not mean that it's working**: make sure you also do not have any errors shown in your dev tools' console before moving onto the next exercise.
+N.B: If your code compiles without errors, **it does not mean that it's working**: make sure you also do not have any errors shown in your dev tools' console before moving onto the next exercise. Sometimes, the page will not refresh automatically, so you'll have to do it manually.
 
-If you're having any trouble, type `hint` in your dev tools' console so show some tips. Also, every exercise section contains a `README.md` file that points you to relevant sections of the Mozilla Developper Network documentation, reading them is recommended.
+If you're having any trouble, read all the error messages carefully, they might contain information that will help you solve your problem. Otherwise, type `hint` in your dev tools' console so show some tips. Also, every exercise section contains a `README.md` file that points you to relevant sections of the Mozilla Developper Network documentation, reading them is recommended.
 
 ## Commands
 
