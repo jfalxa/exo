@@ -1,6 +1,7 @@
 // I AM NOT DONE
 
 export default function main() {
+  // fill this array with 1, 2 and 3
   const array = []
 
   console.log(array)

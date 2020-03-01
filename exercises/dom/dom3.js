@@ -12,6 +12,6 @@ export default function main() {
   root.append(button)
   root.append(counter)
 
-  // now make it so that every time you click on the button,
-  // the number inside counter is incremented by 1
+  // in the browser, you should see a button 'CLICK ME' and a '0' by its side
+  // now make it so that every time you click on the button, the number inside counter is incremented by 1
 }

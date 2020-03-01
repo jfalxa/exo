@@ -1,6 +1,7 @@
 // I AM NOT DONE
 
 export default function main() {
+  // fill this object
   const object = {}
 
   console.log(object)

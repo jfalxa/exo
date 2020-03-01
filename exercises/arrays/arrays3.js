@@ -2,10 +2,15 @@
 
 // another approach to iterating through an array content is to use functions
 
+// you just have to fill the forEach function but read the rest of the code
+// to try and understand how it's used
+
 function forEach(array, action) {
   // the forEach function loops through every element inside the array
   // and executes its parameter "action" on each element separately
+  for // ...
 }
+
 
 function multiplyBy10(array) {
   let arrayX10 = []

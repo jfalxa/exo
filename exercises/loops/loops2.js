@@ -5,8 +5,10 @@ function sum(max) {
   let i = 0
   let total = 0
 
-  while () {
+  while (/* ... */) {
     total += i
+    
+    /* ... */
   }
 
   return total

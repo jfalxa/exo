@@ -4,10 +4,8 @@ export default function main() {
   const hello = 'hello'
   const world = 'world'
 
-  // use the variables defined above
+  // change helloworld using the values above
   const helloworld = ''
-
-  console.log(helloworld)
 
   assert(
     helloworld === 'hello world!',

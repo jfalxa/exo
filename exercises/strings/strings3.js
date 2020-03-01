@@ -3,7 +3,7 @@
 export default function main() {
   const string = 'hello world !'
 
-  // use the string above
+  // get the right character from the string above to make the assert pass
   const result = ''
 
   assert(

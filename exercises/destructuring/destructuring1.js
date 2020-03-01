@@ -5,7 +5,9 @@ export default function main() {
 
   const object = { a: 'a', b: 'b', c: 'c' }
 
-  const {} = object
+  const {
+    /* ... */
+  } = object
 
   assert(a === 'a', 'the extracted key a should have the value "a"')
 
@@ -18,7 +20,9 @@ export default function main() {
 
   const array = [1, 2, 3, 4]
 
-  const [] = array
+  const [
+    /* ... */
+  ] = array
 
   assert(arrayFirst === 1, 'the extracted first element of the array is 1')
 

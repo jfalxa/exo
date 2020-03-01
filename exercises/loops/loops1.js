@@ -1,7 +1,8 @@
 // I AM NOT DONE
 
+// adds every number between 0 and max
 function sum(max) {
-  // adds every number between 0 and max
+  for // ...
 }
 
 export default function main() {
