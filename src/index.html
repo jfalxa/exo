@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ifs1</title>
+    <title>intro</title>
+    <style>
+      body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,23 +27,33 @@
       window.assert = assert
       window.hint = exercise && exercise.hint
 
-      import('')
+      import('../exercises/intro.js')
         .then(mod => {
           if (typeof mod.default === 'function') {
             mod.default()
           }
 
-          console.log(
-            'Good job, you can now go to the next exercise (or keep playing with this one).'
-          )
+          if (exercise.type !== 'read') {
+            document.body.style.backgroundColor = 'lime'
+            document.body.innerHTML =
+              '<span style="font-size: 64px;">☑ Working</span>'
+
+            console.log(
+              'Good job, you can now go to the next exercise (or keep playing with this one).'
+            )
+          }
         })
-        .catch(err =>
+        .catch(err => {
+          document.body.style.backgroundColor = 'crimson'
+          document.body.innerHTML =
+            '<span style="font-size: 128px; font-weight: bold;">☒ Error</span>'
+
           console.error(
             `An error happened while trying to run the exercise's code`,
             '\n',
             err
           )
-        )
+        })
     </script>
   </body>
 </html>

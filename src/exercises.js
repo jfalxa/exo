@@ -1,5 +1,11 @@
 module.exports = [
   {
+    name: 'intro',
+    type: 'read',
+    path: 'exercises/intro.js',
+    hint: 'Read carefully.'
+  },
+  {
     name: 'variables1',
     path: 'exercises/variables/variables1.js',
     hint:
@@ -33,6 +39,7 @@ On the other hand, 'let' variable do not require being initialized.`
   },
   {
     name: 'functions2',
+    type: 'read',
     path: 'exercises/functions/functions2.js',
     hint: 'When declaring a function you can specify different parameters.'
   },
@@ -61,7 +68,7 @@ On the other hand, 'let' variable do not require being initialized.`
     name: 'loops2',
     path: 'exercises/loops/loops2.js',
     hint:
-      'Add a condition on i to the while statement and update i on every iteration'
+      'Add a condition on i to exit the while statement at the right time and do not forget to update i on every iteration'
   },
   {
     name: 'loops3',
@@ -73,18 +80,18 @@ Or you can directly call "return ..." inside the loop in order to end your funct
 
   {
     name: 'strings1',
-    path: 'exercises/strings/strings1',
+    path: 'exercises/strings/strings1.js',
     hint: `Strings can be combined using the "+" operator.
 Example: "a" + "b" === "ab"`
   },
   {
     name: 'strings2',
-    path: 'exercises/strings/strings2',
+    path: 'exercises/strings/strings2.js',
     hint: 'Template strings allow you to execute any JS expression inside ${}'
   },
   {
     name: 'strings3',
-    path: 'exercises/strings/strings3',
+    path: 'exercises/strings/strings3.js',
     hint: `The are many ways to extract parts of a string:
     - access the n-th character of a string by doing "string[n]"
     - separate a string in multiple pieces using "string.split(separator)"
@@ -93,7 +100,7 @@ Example: "a" + "b" === "ab"`
 
   {
     name: 'arrays1',
-    path: 'exercises/arrays/arrays1',
+    path: 'exercises/arrays/arrays1.js',
     hint: `You can either:
     - initialize the array with 1,2,3 
     - use "array.push(element)" to add them manually after initalization
@@ -101,7 +108,7 @@ Example: "a" + "b" === "ab"`
   },
   {
     name: 'arrays2',
-    path: 'exercises/arrays/arrays2',
+    path: 'exercises/arrays/arrays2.js',
     hint: `Inside a for loop, you can use an array's length to iterate through every item of this array.
     
 This might also be a good occasion to use a while loop in combination with:
@@ -110,24 +117,25 @@ This might also be a good occasion to use a while loop in combination with:
   },
   {
     name: 'arrays3',
-    path: 'exercises/arrays/arrays3',
+    path: 'exercises/arrays/arrays3.js',
     hint: `Inside a for loop, you can use an array's length to iterate through every item of this array`
   },
   {
     name: 'arrays4',
-    path: 'exercises/arrays/arrays4',
+    type: 'read',
+    path: 'exercises/arrays/arrays4.js',
     hint: 'Follow the white rabbit'
   },
 
   {
     name: 'objects1',
-    path: 'exercises/objects/objects1',
+    path: 'exercises/objects/objects1.js',
     hint:
       'You can directly initialize the object on declaration or manually add the wanted key/value pairs after'
   },
   {
     name: 'objects2',
-    path: 'exercises/objects/objects2',
+    path: 'exercises/objects/objects2.js',
     hint: `The easiest way to loop through an object's keys it to use the "for (const key in object)" loop.
 Another way it to use the "Object.keys(object)" or "Object.entries(object)" global functions: they return an array containing what you asked and allow you to use the functional iteration studied in the previous set of exercises`
   },
@@ -152,6 +160,7 @@ Another way it to use the "Object.keys(object)" or "Object.entries(object)" glob
   },
   {
     name: 'dom3',
+    type: 'read',
     path: 'exercises/dom/dom3.js',
     hint: `Detecting clicks is done through event listeners, there are 2 ways of registering them:
     - using "element.addEventListener("click", callback)"
@@ -159,5 +168,12 @@ Another way it to use the "Object.keys(object)" or "Object.entries(object)" glob
     
 In both cases, "callback" should be a function that will be called every time the event is triggered
     `
+  },
+
+  {
+    name: 'outro',
+    type: 'read',
+    path: 'exercises/outro.js',
+    hint: 'Good job.'
   }
 ]
